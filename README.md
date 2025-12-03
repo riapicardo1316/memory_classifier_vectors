@@ -4,20 +4,20 @@ This script reads a conversation text file and classifies each sentence into mem
 
 ## Requirements
 
-Create a file named requirements.txt with the following lines:
+Create a file named `requirements.txt` with the following lines:
 
-
+```
 transformers
 sentence-transformers
 scikit-learn
 numpy
-
+```
 
 Install dependencies:
 
-bash
+```bash
 pip install -r requirements.txt
-
+```
 
 ## Setup
 
@@ -25,9 +25,9 @@ pip install -r requirements.txt
 2. Clone or place the project folder locally.
 3. Create a text file containing user conversation. Each line should be one statement. Example:
 
-
+```
 conversation.txt
-
+```
 
 4. Ensure the text file is in the same directory as the script.
 
@@ -35,8 +35,8 @@ conversation.txt
 
 Run the classifier by passing the conversation file name as an argument:
 
-bash
+```bash
 python3 memory_classifier.py conversation.txt
-
+```
 
 If the file does not exist, the script prints an error and stops.
